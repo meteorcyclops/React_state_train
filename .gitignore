@@ -1,0 +1,7 @@
+/node_modules
+/jspm_packages
+.idea/React-JSPM-beta.iml
+.idea/copyright/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
