@@ -16,7 +16,21 @@ class NewObject extends Component {
     }
 
     render() {
-        let styleChange = this.state.liked ? 'YY':'NN'
+        let YY = {
+            height:'500px',
+            width:'500px',
+            borderRadius:'50%',
+            transition:'1s',
+            backgroundColor:'red',
+        };
+        let NN = {
+            backgroundColor:'green',
+            height:'20px',
+            width:'20px',
+            borderRadius:'0%',
+        };
+
+        let styleChange = this.state.liked ? YY:NN;
 
         return (
             <button className="N_object" onClick={this.handleClick.bind(this)} style={styleChange}>
