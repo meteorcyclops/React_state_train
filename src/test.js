@@ -1,13 +1,16 @@
 import React, {Component} from 'react'
 import stateComponent from './state_train';
 import NewObject from './stateTraining'
+import { StyleRoot } from 'radium'
 
 class Test extends Component {
     render() {
         return (
             <div>
                 <h1 style={{textAlign: "center"}}>
-                    <NewObject/>
+                    <StyleRoot>
+                        <NewObject/>
+                    </StyleRoot>
                 </h1>
             </div>
         )
