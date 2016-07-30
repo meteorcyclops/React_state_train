@@ -17,7 +17,7 @@ class LifecycleComponent extends Component {
 
 
     componentDidMount() {
-        this.timer = setInterval(function () {
+        setInterval(function () {
             let opacity = this.state.opacity;
             opacity -= 0.1;
             if(opacity<0.1){
@@ -26,7 +26,7 @@ class LifecycleComponent extends Component {
             this.setState({
                 opacity:opacity
             })
-        }.bind(this), 500)
+        }.bind(this), 50)
     }
 
     componentWillMount() {
@@ -34,8 +34,12 @@ class LifecycleComponent extends Component {
     }
 
     render() {
+        let styles = {
+            fontSizes:'50px',
+            color:'purple'
+        }
         return (
-            <div style={{opacity:this.state.opacity}}>
+            <div style={{opacity:this.state.opacity,styles}}>
                 Hello {this.props.name}
             </div>
         )
