@@ -10,6 +10,13 @@ import Radium from 'radium'
 class InputProject extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            value:'Hello!'
+        }
+    }
+
+    handleChange(){
+        this.setState({value:event.target.value})
     }
 
     componentDidMount() {
@@ -21,8 +28,11 @@ class InputProject extends Component {
     }
 
     render() {
+        let value = this.state.value;
         return (
             <div>
+                <input type="text" value={value} onChange={this.handleChange.bind(this)}/>
+                <p>{value}</p>
             </div>
         )
     }
