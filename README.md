@@ -1,7 +1,8 @@
-# React-state-training
+# React-training
 
-React state 練習
+React 練習 紀錄
 
+ref: react-demos
  
 
 ### Version
